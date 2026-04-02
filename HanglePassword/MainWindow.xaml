@@ -1,0 +1,17 @@
+﻿<Window x:Class="HanglePassword.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:HanglePassword"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+
+            <TextBlock Text="유니코드 지원 보안 패스워드 입력:" FontWeight="Bold" Margin="0,0,0,10"/>
+
+            <local:SimpleHangulPassword x:Name="MyPasswordBox" Margin="0,0,0,10" />
+
+            <Button Content="비밀번호 확인" Width="150" Height="30" Click="Button_Click"/>
+
+        </StackPanel>
+    </Grid>
+</Window>
